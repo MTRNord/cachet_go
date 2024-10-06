@@ -1,4 +1,4 @@
-package cachet
+package cachet_go
 
 import (
 	"net/http"

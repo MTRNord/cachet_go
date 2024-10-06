@@ -1,5 +1,5 @@
 /*
-Package cachet provides a client for using the Cachet API (https://cachethq.io/).
+package cachet_go provides a client for using the Cachet API (https://cachethq.io/).
 
 Construct a new Cachet client, then use the various services on the client to
 access different parts of the Cachet API. For example:
@@ -13,7 +13,7 @@ access different parts of the Cachet API. For example:
 The services of a client divide the API into logical chunks and correspond to
 the structure of the Cachet API documentation at https://docs.cachethq.io/docs/.
 
-Authentication
+# Authentication
 
 The cachet library supports various methods to support the authentication.
 This methods are combined in the AuthenticationService that is available at client.Authentication.
@@ -47,6 +47,5 @@ The other way is the API Token by Cachet:
 Additionally when creating a new client, pass an http.Client that supports further actions for you.
 For more information regarding authentication have a look at the Cachet documentation:
 https://docs.cachethq.io/docs/api-authentication
-
 */
-package cachet
+package cachet_go

@@ -1,4 +1,4 @@
-package cachet
+package cachet_go
 
 // GeneralService contains REST endpoints that belongs no specific service.
 type GeneralService struct {

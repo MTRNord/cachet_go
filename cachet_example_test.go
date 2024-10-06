@@ -1,4 +1,4 @@
-package cachet_test
+package cachet_go_test
 
 import (
 	"fmt"

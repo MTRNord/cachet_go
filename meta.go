@@ -1,4 +1,4 @@
-package cachet
+package cachet_go
 
 // Meta can contain extra information such as the current paging attributes or links to other pages.
 // Some responses will contain a meta object.
