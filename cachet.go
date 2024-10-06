@@ -5,7 +5,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"net/http"
 	"net/url"
 	"reflect"
@@ -83,7 +82,7 @@ func NewClient(instance string, httpClient *http.Client) (*Client, error) {
 	}
 
 	if len(instance) == 0 {
-		return nil, fmt.Errorf("No Cachet instance given")
+		return nil, fmt.Errorf("no Cachet instance given")
 	}
 	baseURL, err := url.Parse(instance)
 	if err != nil {
@@ -246,7 +245,7 @@ func (c *Client) Do(req *http.Request, v interface{}) (*Response, error) {
 			io.Copy(w, resp.Body)
 		} else {
 			var body []byte
-			body, err = ioutil.ReadAll(resp.Body)
+			body, err = io.ReadAll(resp.Body)
 			if err != nil {
 				// even though there was an error, we still return the response
 				// in case the caller wants to inspect it further
