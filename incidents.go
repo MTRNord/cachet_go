@@ -43,7 +43,7 @@ type Incident struct {
 	OccurredAt        string           `json:"occurred_at,omitempty"`
 	Template          string           `json:"template,omitempty"`
 	Vars              []string         `json:"vars,omitempty"`
-	Meta              []map[string]string         `json:"meta,omitempty"`
+	Meta              map[string]map[string]string         `json:"meta,omitempty"`
 	CreatedAt         string           `json:"created_at,omitempty"`
 	UpdatedAt         string           `json:"updated_at,omitempty"`
 	DeletedAt         string           `json:"deleted_at,omitempty"`
