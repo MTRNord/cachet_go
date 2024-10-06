@@ -7,11 +7,11 @@ import (
 
 const (
 	// ScheduleUpcoming means "This scheduled event is going to happen somewhere in the future."
-	ScheduleUpcoming = 0
+	ScheduleUpcoming = json.Number(0)
 	// ScheduleInProgress means "This scheduled event is happening at the moment."
-	ScheduleInProgress = 1
+	ScheduleInProgress = json.Number(1)
 	// ScheduleComplete means "This scheduled event has already finished."
-	ScheduleComplete = 2
+	ScheduleComplete = json.Number(2)
 )
 
 // SchedulesService contains REST endpoints that belongs to cachet schedules.
