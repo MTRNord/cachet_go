@@ -1,7 +1,6 @@
 package cachet_go
 
 import (
-	"encoding/json"
 	"fmt"
 	"net/http"
 	"reflect"
@@ -42,7 +41,7 @@ func TestSchedulesService_GetAll(t *testing.T) {
 			{
 				ID:          1,
 				Name:        "Schedule Name",
-				Status:      json.Number(2),
+				Status:      "2",
 				Message:     "Schedule Message",
 				ScheduledAt: "2015-08-01 12:30:00",
 				CompletedAt: "2015-08-01 13:00:00",
@@ -76,7 +75,7 @@ func TestSchedulesService_Get(t *testing.T) {
 	expected := &Schedule{
 		ID:          1,
 		Name:        "Schedule Name",
-		Status:      json.Number(2),
+		Status:      "2",
 		Message:     "Schedule Message",
 		ScheduledAt: "2015-08-01 12:30:00",
 		CompletedAt: "2015-08-01 13:00:00",
@@ -116,7 +115,7 @@ func TestSchedulesService_Create(t *testing.T) {
 	expected := &Schedule{
 		ID:          1,
 		Name:        "Schedule Name",
-		Status:      json.Number(2),
+		Status:      "2",
 		Message:     "Schedule Message",
 		ScheduledAt: "2015-08-01 12:30:00",
 		CompletedAt: "2015-08-01 13:00:00",
@@ -151,7 +150,7 @@ func TestSchedulesService_Update(t *testing.T) {
 	expected := &Schedule{
 		ID:          1,
 		Name:        "Schedule Name Update",
-		Status:      json.Number(2),
+		Status:      "2",
 		Message:     "Schedule Message",
 		ScheduledAt: "2015-08-01 12:30:00",
 		CompletedAt: "2015-08-01 13:00:00",
