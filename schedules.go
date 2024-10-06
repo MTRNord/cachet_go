@@ -1,6 +1,7 @@
 package cachet_go
 
 import (
+	"encoding/json"
 	"fmt"
 )
 
@@ -23,7 +24,7 @@ type Schedule struct {
 	ID          int         `json:"id,omitempty"`
 	Name        string      `json:"name,omitempty"`
 	Message     string      `json:"message,omitempty"`
-	Status      *int        `json:"status,omitempty"`
+	Status      json.Number `json:"status,omitempty"`
 	ScheduledAt string      `json:"scheduled_at,omitempty"`
 	CompletedAt string      `json:"completed_at,omitempty"`
 	CreatedAt   string      `json:"created_at,omitempty"`
